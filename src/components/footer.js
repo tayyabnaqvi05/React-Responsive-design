@@ -3,7 +3,7 @@ import '../App.css';
 const Myfooter = () => {
     return (
 <>
-    <footer className='bg'>
+    <footer className="bg-light">
       <div id="branding">
         <p>© 2021 ASH Research Collaborative</p>
       </div>

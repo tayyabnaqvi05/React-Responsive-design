@@ -6,7 +6,7 @@ import account from "./images/account.png";
 import review from "./images/Review.png"; 
 import consent from "./images/consent.png";
 import access from "./images/access.png";
-const content = () => {
+const content = ({ onJoinUsClick }) => {
   return (
     <>
     <div className="container">
@@ -18,7 +18,7 @@ const content = () => {
                       <h3>Welcome to the ASH Research Collaborative Data Hub Participant Portal!</h3>
                       <p>The Data Hub is a program that aims to improve the lives of people with blood diseases by finding better and more effective ways to care for patients. To learn more about the Data Hub, click the button below. </p>
                       <div className="btn-frame">
-                        <button className="btn d-grid col-sm-12 col-lg-6" value=""><h5>Join the Data hub</h5></button>
+                        <button onClick={onJoinUsClick} className="btn d-grid col-sm-12 col-lg-6" value=""><h5>Join the Data hub</h5></button>
                       </div>
                     </div>
                   </div>
